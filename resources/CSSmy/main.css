@@ -1,0 +1,261 @@
+main {
+    width: 75%;
+    height: calc(100vh - 70px);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+main .overview_slogan {
+    width: 100%;
+    /* margin-top: 100px; */
+    position: relative;
+    top: 20px;
+}
+
+
+main .overview_slogan .slogan_title {
+    width: 80%;
+    /* background-color: red; */
+    position: relative;
+    top: 30px;
+    font-size: 1vw;
+    margin-bottom: 30px;
+}
+
+main .overview_list_blank {
+    width: 5%;
+    background-color: yellow;
+    float: left;
+    height: inherit;
+}
+
+main .targetImg .targetImg {
+    width: 90%;
+}
+
+
+@media (max-width:1200px) {
+    #img_body {
+        height: 800px;
+    }
+}
+
+@media (max-width:960px) {
+    #img_body {
+        height: 500px;
+    }
+}
+
+@media (max-width:720px) {
+    #img_body {
+        height: 300px;
+    }
+}
+
+/* 캠페인 박스 제목 */
+.box_name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 오버뷰카드 */
+.overview_card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ovCard {
+    border-radius: 10px;
+}
+
+
+/* .ovCard.red {
+    border-left: 5px solid var(--red);
+}
+
+.ovCard.cyan {
+    border-left: 5px solid var(--cyan);
+}
+
+.ovCard.orange {
+    border-left: 5px solid var(--orange);
+}
+
+.ovCard.blue {
+    border-left: 5px solid var(--blue);
+} */
+
+/* 캠페인 오버뷰리스트 카드 헤더 */
+.ovCardhd {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ovCard-text {
+    font-size: 25px;
+}
+
+.ovCard-icon {
+    font-size: 30px;
+    font-style: text-primary;
+    float: right;
+}
+
+
+/* 캠페인 인증 */
+
+.document_name {
+    white-space: nowrap;
+}
+
+
+/* 캠페인 범위  */
+
+.range_body {
+    position: relative;
+    padding: 0;
+}
+
+
+.outrange {
+    position: absolute;
+    /* display: flex; */
+    left: 50%;
+    top: 101%;
+    transform: translate(-50%, -100%);
+    height: 100%;
+    width: 93%;
+    border-radius: 200px 200px 0 0;
+    background-color: lightblue;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.range {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: end;
+}
+
+.range_value {
+    display: flex;
+    height: 22%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px
+}
+
+
+
+@media (max-width:1200px) {
+    .outrange {
+        width: 60%;
+        height: 100%;
+    }
+
+    .range {
+        width: 30%;
+        height: 53%;
+    }
+
+    .range_value {
+        height: 20%;
+        font-size: large;
+    }
+}
+
+@media (max-width:730px) {
+    .outrange {
+        width: 100%;
+        height: 100%;
+    }
+
+    .range {
+        width: 60%;
+        height: 50%
+    }
+
+    .range_value {
+        height: 20%;
+        font-size: large;
+    }
+}
+
+.address {
+    width: 150px;
+    text-align: center;
+    color: cornsilk;
+}
+
+
+.campaign_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 캠페인 정보글 스크롤 창 */
+.campaign_Info {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    position: inherit;
+    border: none;
+    font-size: 20px;
+}
+
+.campaign_Info::-webkit-scrollbar {
+    width: 7px;
+}
+
+.campaign_Info::-webkit-scrollbar-thumb {
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+.campaign_Info::-webkit-scrollbar-track {
+    background-color: lightslategray;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+/* 캠페인 켈린더 테이블 */
+.campaign_Calender_Body {
+    max-height: 475px;
+    overflow: auto;
+    margin: 0;
+}
+
+.campaign_Calender_Body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.campaign_Calender_Body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.campaign_Calender_Body::-webkit-scrollbar-track {
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.campaign_Calender_Header {
+    margin: 0;
+}
